@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>BlockCertify | Create and Verify NFT Certificates</title>
+    <link rel="stylesheet" type="text/css" href="/Users/sachinrao/Desktop/CLG/MINI PROJECTS/website.css">
+
+    <!-- icon -->
+    <link rel="icon" type="image/png" href="/Users/sachinrao/Desktop/CLG/PROJECT IDEAS/MINI PROJECT/images/logo1.jpeg">
+    <link rel="shortcut icon" type="image/png" href="/Users/sachinrao/Desktop/CLG/PROJECT IDEAS/MINI PROJECT/images/sachin rao.JPG">
+    <script src="/Users/sachinrao/Desktop/CLG/MINI PROJECTS/website.js"></script>
+    <link rel="stylesheet" href="/Users/sachinrao/Desktop/CLG/MINI PROJECTS/website.css">
+
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Mono&family=Lato:ital@1&display=swap" rel="stylesheet">
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+
+
+
+</head>
+
+<body onload="typeWriter(); hideLoading()">
+    <div id="loading"></div>
+    <header class="header">
+
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+                <img src="/Users/sachinrao/Desktop/CLG/PROJECT IDEAS/MINI PROJECT/images/logo1.jpeg" width="40" height="40" class="d-inline-block align-top" alt="">
+                BlockCertify</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+    <div class="container">
+        <div class="row" id="home">
+            <div class="col-sm-6 banner-info">
+                <h2 class="firamono" id="TypingEffectText">Certify and Verify documents with the Blockchain
+                </h2>
+
+                <p class="big-text">BlockCertify</p>
+                <p class="firamono">Educational Certificates, Legal Docs or Bonds, create NFTs for existing physical
+                    documents, and
+                    verify
+                    their
+                    credibility from anywhere around the globe.</p>
+                <a class="btn btn-first" href="./verify.html">VERIFY</a>
+                <a class="btn btn-second" href="./create.html">CREATE</a>
+            </div>
+
+            <div class="col-sm-6 banner-image">
+                <img src="./images/pic1.png" class="img-responsive">
+            </div>
+        </div>
+        <div class="row" id="about">
+            <h3 class="text-center mb-3">ABOUT US</h3>
+            <p class="text-center firamono mb-5">We are a group of passionate and goal-driven students developing this
+                product /
+                software as a part of our
+                Bachelor's degree Project. We are making use of the Blockchain Technology to power our application,
+                where we
+                record transaction data and generate NFT Certificates by the inputs given by user.</p>
+            <br><br>
+            <h4 class="text-center">Our Team</h4><br>
+            <h6 class="col-md-1 text-center"> </h6>
+            <h6 class="col-md-2 text-center">
+                <ul>
+                    <li>
+                        <img class="profile-img" src="./profileimgs/sir.jpeg">
+                    </li>
+                    <li>Dr. vijaykumar</li>
+                    <li>Professor, Project Guide</li>
+
+                </ul>
+
+            </h6>
+            <h6 class="col-md-2 text-center">
+                <ul>
+                    <li>
+                        <img class="profile-img" src="/Users/sachinrao/Desktop/CLG/PROJECT IDEAS/MINI PROJECT/images/sachin rao.JPG">
+                    </li>
+                    <li>SACHIN RAO JUPALLY</li>
+                    <li>UG Student, Dept. of CSE</li>
+
+                </ul>
+            </h6>
+            <h6 class="col-md-2 text-center">
+                <ul>
+                    <li>
+                        <img class="profile-img" src="/Users/sachinrao/Desktop/CLG/PROJECT IDEAS/MINI PROJECT/images/chalukya Medium 2.jpeg">
+                    </li>
+                    <li>CHALUKYA GARIKAPATI</li>
+                    <li>UG Student, Dept. of CSE</li>
+
+                </ul>
+            </h6>
+            <h6 class="col-md-2 text-center">
+                <ul>
+                    <li>
+                        <img class="profile-img" src="/Users/sachinrao/Desktop/CLG/PROJECT IDEAS/MINI PROJECT/images/sri teja.jpg">
+                    </li>
+                    <li>SRI TEJA</li>
+                    <li>UG Student, Dept. of CSE</li>
+
+                </ul>
+            </h6>
+            <h6 class="col-md-2 text-center">
+                <ul>
+                    <li>
+                        <img class="profile-img" src="/Users/sachinrao/Desktop/CLG/PROJECT IDEAS/MINI PROJECT/images/sathish.jpeg">
+                    </li>
+                    <li>JVSS SATHISH REDDY</li>
+                    <li>UG Student, Dept. of CSE</li>
+
+                </ul>
+            </h6>
+            <h6 class="col-md-1 text-center"> </h6>
+
+        </div>
+
+    </div>
+    
+    <!-- typing effect js -->
+    <script src="./js/typingeffect.js"></script>
+
+    <!-- bootstrap jquery -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Mono&family=Lato:ital@1&display=swap" rel="stylesheet">
+
+
+    <link rel="icon" type="image/png" href="./images/logo.png">
+    <link rel="shortcut icon" type="image/png" href="./images/logo.png">
+
+
+    <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js" type="application/javascript"></script>
+
+
+
+    <script src="./js/verify.js"></script>
+
+    <script src="./js/loading.js"></script>
+
+    <link rel="stylesheet" href="./css/verify.css">
+    <link rel="stylesheet" href="./css/loading.css">
+
+    <title>Verify a NFT Document</title>
+</head>
+
+<body onload="hideLoading()">
+    <div id="loading"></div>
+
+    <h1>Verify an NFT document generated by our site, <br>BlockCertify <img class="logo" src="./images/logo.png" alt=""
+            width="50px">
+    </h1>
+
+    <h2>
+        Select any one of the options below and provide required inputs
+    </h2>
+
+    <div class="optionlabel">
+        <label onclick="show1()">
+            <input type="radio" name="methodOfVerify" id="1" onclick="show1()">
+            Verify By Only Transaction ID
+            <br>
+        </label>
+    </div>
+    <form class="inputs" action="" method="post" id="form1" name="form1" style="display:none;">
+
+        <input type="text" name="mode" value="1" class="mode" readonly>
+        Enter Transaction ID:<br>
+        <input type="text" name="trxid1" id="trxid1" required>
+        <br><br><br><button type="button" onclick="showStatus()">Submit</button><br>
+
+    </form>
+
+
+    <div class="optionlabel">
+        <label onclick="show2()">
+            <input type="radio" name="methodOfVerify" id="2" onclick="show2()">
+            Verify By Transaction ID and File Hash Value
+            <br>
+        </label>
+    </div>
+    <form class="inputs" action="" method="post" id="form2" name="form2" style="display:none;">
+
+        <input type="text" name="mode" value="2" class="mode" readonly>
+        Enter Transaction ID:<br>
+        <input type="text" name="trxid2" id="trxid2" required>
+        <br><br>
+        Enter File Hash value:<br>
+        <input type="text" name="filehashvalue" id="filehashvalue" required>
+        <br><br><br><button type="button" onclick="showStatus()">Submit</button><br>
+    </form>
+
+    <div class="optionlabel">
+        <label onclick="show3()">
+            <input type="radio" name="methodOfVerify" id="3" onclick="show3()">
+            Verify By Transaction ID and File Upload
+            <br>
+        </label>
+    </div>
+    <form class="inputs" action="" method="post" id="form3" name="form3" style="display:none;">
+
+        <input type="text" name="mode" value="3" class="mode" readonly>
+        Enter Transaction ID:<br>
+        <input type="text" name="trxid3" id="trxid3" required><br><br>
+        Upload File:<br>
+        <input type="file" name="fileToUpload" id="fileToUpload" required>
+
+        <br><br><br><button type="button" onclick="showStatus()">Submit</button><br>
+
+    </form>
+
+
+    <iframe id="fileframe" src="" width="100%" style="display:none; min-height:400px;"></iframe>
+    <br><br>
+    <br>
+    <a href="" id="downloadbtn" target="_blank" download style="display:none;">Download NFT File</a>
+
+    <p id="FileHashOutput"></p>
+
+    <p id="comparisionFilehash"></p>
+
+    <p id="errorMessage" style="display:none;"></p>
+
+
+    <br><br>
+
+    <p id="certifierWalletAddr" style="display:none;">The wallet address of certifier is : <span id="cwa"></span></p>
+    <br>
+
+    <input type="text" name="compareCwaIp" id="CompareCwaIp" style="display:none;">
+    <button id="CompareCwa" style="display:none;" type="button" onclick="compareCwa()">Compare Certifier</button>
+    <br><br>
+    <p id="cwamessage"></p>
+    <div class="reloadmsg" onclick="location.reload()">Check another Certificate / NFT</div>
+
+    <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js/dist/web3.min.js"></script>
+
+
+
+</body>
+
+</html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Mono&family=Lato:ital@1&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="./images/logo.png">
+    <link rel="shortcut icon" type="image/png" href="./images/logo.png">
+
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+
+    <script src="./js/create.js"></script>
+    <script src="./js/loading.js"></script>
+    <link rel="stylesheet" href="./css/loading.css">
+
+    <link rel="stylesheet" href="./css/create.css">
+
+    <title>Create an NFT Document</title>
+
+
+
+</head>
+
+<body onload="hideLoading()">
+    <div id="loading"></div>
+    <h1>Create an NFT document on our site, <br>BlockCertify <img class="logo" src="./images/logo.png" alt=""
+            width="50px">
+    </h1>
+
+    <h2>
+        Connect your MetaMask wallet and provide the required inputs below to finish the NFT transaction
+
+    </h2>
+
+    <br>
+    <br>
+
+    <label for="1" class="inputs" style="text-align: center; vertical-align: middle;">
+        <button type="button" onclick="connectMetamask()">Connect MetaMask</button>
+        <br>
+        <img id="connectedImg" src="./images/tick.png" width="25rem" height="25rem" style="display:none;">
+        <span id="connectedMsg" style="display:none;">MetaMask Connected Successfully</span>
+        <p id="MetaMaskWarning"></p>
+    </label>
+
+    <label class="inputs" for="2">Enter Recipient's Wallet ID / Ethereum Account Address:
+        <br>
+        <br>
+        <input type="text" name="recpWallet" id="recpWallet" required oninput="enableButton()">
+    </label>
+
+    <label class="inputs" for="3">Upload the NFT File, and give its link below: (Starting with https:// or ipfs://)
+        <br>
+        <br>
+        <input type="text" name="filelink" id="filelink" required oninput="enableButton()">
+    </label>
+
+    <label for="4" class="inputs" style="text-align: center; vertical-align: middle;">
+        <button type="button" onclick="makeMyNFT()" id="finalSubmit" disabled>Create NFT</button><br>
+
+
+    </label>
+
+    <label for="5" class="inputs" style="display:none;" id="TrxResult">
+        Transaction Initiated !
+        <img src='./images/tick.gif' width="25rem" height="25rem">
+        <br>
+        <br>
+        Transaction ID :
+        <br><input type="text" id="trxidtxtbox" disabled>
+
+        <p align="center">
+            <img id="cpimg" src="./images/copy.png" alt="Copy" role="button" height="25px" onclick="copyTrx()">
+        </p>
+        <br>
+        Immediately copy this Transaction ID to a safe location.
+        <br><br>
+        Track at our Verify page:
+        <form action="https://blockcertifyproject.github.io/verify.html" style="display:inline">
+            <button type="submit">Verify</button>
+        </form>
+
+
+
+    </label>
+
+<footer>
+        <div class="row">
+            <div class="col">
+                BlockCertify Project <img src="/Users/sachinrao/Desktop/CLG/PROJECT IDEAS/MINI PROJECT/images/logo1.jpeg" alt="" width="25px">
+            </div>
+            <div class="col" id="contact">
+                <div class="text-primary">Contact Us</div>
+
+                <ul>
+                    <li>blockcertifyproject@gmail.com</li>
+                    <li>JAIN UNIVERSITY</li>
+                    <li>KANAKAPURA,BANGLORE</li>
+                    <li>562112</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col text-center text-muted">
+                Content owned and developed by Batch (2020-2024), Department of CSE, JAIN UNIVERSITY,
+                BANGLORE, IN.</div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
